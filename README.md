@@ -23,15 +23,17 @@ Certifique-se de ter o [Node.js](https://nodejs.org/) e o [npm](https://www.npmj
 npm install
 
 ```
-#### Rotas
+### Rotas
 GET /products
-Retorna uma lista de todos os produtos.
+
+- Retorna uma lista de todos os produtos.
 
 Exemplo:
 curl http://localhost:3001/products
 
 GET /products/:productname/:price
-Adiciona um novo produto ao banco de dados com o nome e preço fornecidos.
+
+- Adiciona um novo produto ao banco de dados com o nome e preço fornecidos.
 
 Exemplo:
 curl http://localhost:3001/products/banana/2.5
