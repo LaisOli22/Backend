@@ -22,7 +22,8 @@ Certifique-se de ter o [Node.js](https://nodejs.org/) e o [npm](https://www.npmj
 ```bash
 npm install
 
-### Rotas
+```
+#### Rotas
 GET /products
 Retorna uma lista de todos os produtos.
 
