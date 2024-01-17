@@ -10,9 +10,11 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "@fastify/cors": "^8.5.0",
     "@fastify/postgres": "^5.2.2",
     "@prisma/client": "^5.8.1",
     "fastify": "^4.25.2",
+    "fastify-cors": "^6.1.0",
     "pg": "^8.11.3"
   },
   "devDependencies": {
