@@ -1,9 +1,7 @@
 import fastify from "fastify";
 import { prisma } from "./lib/prisma";
 import cors from '@fastify/cors'
-import { PrismaClient } from '@prisma/client';
 const server = fastify();
-const prisma = new PrismaClient();
 
 server.register(cors), {
   origin: 'http://localhost:3000',
@@ -28,7 +26,7 @@ server.post("/products", async (req, reply) => {
       },
     });
   reply.send({newProduct});
-  
+
 } catch (error) {
   console.error('Erro ao adicionar produto:', error);
   reply.status(500).send({ error: 'Internal Server Error' });
